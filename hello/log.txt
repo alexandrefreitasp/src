@@ -1,0 +1,40 @@
+https://random-status-code.herokuapp.com- online: false
+https://www.alura.com.br- online: true
+https://www.caelum.com.br- online: true
+https://www.prosimulador.com.br- online: true
+https://random-status-code.herokuapp.com- online: false
+https://www.alura.com.br- online: true
+https://www.caelum.com.br- online: true
+https://www.prosimulador.com.br- online: true
+19/07/2022 17:21:22 - online: false
+19/07/2022 17:21:22 - online: true
+19/07/2022 17:21:22 - online: true
+19/07/2022 17:21:22 - online: true
+19/07/2022 17:21:22 - online: true
+19/07/2022 17:21:22 - online: true
+19/07/2022 17:21:22 - online: true
+19/07/2022 17:21:22 - online: true
+19/07/2022 17:21:22 - online: false
+19/07/2022 17:21:22 - online: true
+19/07/2022 17:21:22 - online: true
+19/07/2022 17:21:22 - online: true
+19/07/2022 17:21:22 - online: false
+19/07/2022 17:21:22 - online: true
+19/07/2022 17:21:22 - online: true
+19/07/2022 17:21:22 - online: true
+19/07/2022 17:23:22 https://random-status-code.herokuapp.com - online: true
+19/07/2022 17:23:22 https://www.alura.com.br - online: true
+19/07/2022 17:23:22 https://www.caelum.com.br - online: true
+19/07/2022 17:23:22 https://www.prosimulador.com.br - online: true
+19/07/2022 17:23:22 https://random-status-code.herokuapp.com - online: false
+19/07/2022 17:23:22 https://www.alura.com.br - online: true
+19/07/2022 17:23:22 https://www.caelum.com.br - online: true
+19/07/2022 17:23:22 https://www.prosimulador.com.br - online: true
+19/07/2022 17:29:22 - https://random-status-code.herokuapp.com- online: true
+19/07/2022 17:29:22 - https://www.alura.com.br- online: true
+19/07/2022 17:29:22 - https://www.caelum.com.br- online: true
+19/07/2022 17:29:22 - https://www.prosimulador.com.br- online: true
+19/07/2022 17:29:22 - https://random-status-code.herokuapp.com- online: false
+19/07/2022 17:29:22 - https://www.alura.com.br- online: true
+19/07/2022 17:29:22 - https://www.caelum.com.br- online: true
+19/07/2022 17:29:22 - https://www.prosimulador.com.br- online: true
