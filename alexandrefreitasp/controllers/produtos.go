@@ -64,22 +64,20 @@ func Update(w http.ResponseWriter, r *http.Request) {
 
 		idConvertidaParaInt, err := strconv.Atoi(id)
 		if err != nil {
-			log.Println("Erro na conversão do ID para Int")
+			log.Println("Erro na convesão do ID para int:", err)
 		}
 
 		precoConvertidoParaFloat, err := strconv.ParseFloat(preco, 64)
 		if err != nil {
-			log.Println("Erro na conversão do preço para Float64")
+			log.Println("Erro na convesão do preço para float64:", err)
 		}
 
 		quantidadeConvertidaParaInt, err := strconv.Atoi(quantidade)
 		if err != nil {
-			log.Println("Erro na conversão da quantidade para Int")
+			log.Println("Erro na convesão da quantidade para int:", err)
 		}
 
 		models.AtualizaProduto(idConvertidaParaInt, nome, descricao, precoConvertidoParaFloat, quantidadeConvertidaParaInt)
-
-		http.Redirect(w, r, "/", codRetornoHttp)
-
 	}
+	http.Redirect(w, r, "/", codRetornoHttp)
 }
