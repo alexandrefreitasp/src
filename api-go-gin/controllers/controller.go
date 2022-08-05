@@ -13,7 +13,6 @@ func ExibeTodosAlunos(c *gin.Context) {
 	database.DB.Find(&alunos)
 	c.JSON(200, alunos)
 }
-
 func Saudacao(c *gin.Context) {
 	nome := c.Params.ByName("nome")
 	c.JSON(200, gin.H{
@@ -34,7 +33,6 @@ func CriaNovoAluno(c *gin.Context) {
 	}
 	database.DB.Create(&aluno)
 	c.JSON(http.StatusOK, aluno)
-
 }
 func BuscaAlunoPorId(c *gin.Context) {
 	var aluno models.Aluno
@@ -48,7 +46,6 @@ func BuscaAlunoPorId(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusOK, aluno)
-
 }
 func DeletaAluno(c *gin.Context) {
 	var aluno models.Aluno
@@ -56,7 +53,6 @@ func DeletaAluno(c *gin.Context) {
 	database.DB.Delete(&aluno, id)
 	c.JSON(http.StatusOK, gin.H{"data": "Aluno deletado com sucesso"})
 }
-
 func EditaAluno(c *gin.Context) {
 	var aluno models.Aluno
 	id := c.Params.ByName("id")
@@ -74,7 +70,6 @@ func EditaAluno(c *gin.Context) {
 	}
 	database.DB.Model(&aluno).UpdateColumns(aluno)
 	c.JSON(http.StatusOK, aluno)
-
 }
 func BuscaAlunoPorCPF(c *gin.Context) {
 	var aluno models.Aluno
@@ -88,4 +83,14 @@ func BuscaAlunoPorCPF(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusOK, aluno)
+}
+func ExibePaginaIndex(c *gin.Context) {
+	var alunos []models.Aluno
+	database.DB.Find(&alunos)
+	c.HTML(http.StatusOK, "index.html", gin.H{
+		"alunos": alunos,
+	})
+}
+func RotaNaoEncontrada(c *gin.Context) {
+	c.HTML(http.StatusNotFound, "404.html", nil)
 }
