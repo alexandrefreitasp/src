@@ -6,8 +6,18 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	_ "github.com/swaggo/swag/example/celler/httputil"
 )
 
+// ExibeTodosAlunos godoc
+// @Summary         Exibe todos os alunos
+// @Description     Rota para exibir todos os alunos
+// @Tags            alunos
+// @Accept          json
+// @Produce         json
+// @Success         200 {object} models.Aluno
+// @Failure         404 {object} httputil.HTTPError
+// @Router          /alunos [get]
 func ExibeTodosAlunos(c *gin.Context) {
 	var alunos []models.Aluno
 	database.DB.Find(&alunos)
